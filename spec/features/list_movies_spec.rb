@@ -24,8 +24,8 @@ describe "Viewing the list of movies" do
     visit movies_url
 
     expect(page).to have_text("3 Movies")
-    expect(page).to have_text("movie1.title")
-    expect(page).to have_text("movie2.title")
-    expect(page).to have_text("movie3.title")
+    expect(page).to have_text(movie1.title)
+    expect(page).to have_text(movie2.title)
+    expect(page).to have_text(movie3.title)
   end
 end
