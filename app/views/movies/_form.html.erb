@@ -1,7 +1,7 @@
 <%= form_for(@movie) do |f| %>
   <p>
     <%= f.label :title %><br/>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, autofocus: true %>
   </p>
 
   <p>
@@ -26,5 +26,6 @@
 
   <p>
     <%= f.submit %>
+    <%= link_to "Cancel", movies_path %>
   </p>
 <% end %>
