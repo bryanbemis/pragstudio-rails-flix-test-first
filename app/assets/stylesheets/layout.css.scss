@@ -5,6 +5,12 @@ header#page-header {
   color: $secondary-color;
   background: $primary-color;
   padding: 5px;
+  border-bottom: 3px solid darken($primary-color, 10%);
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 footer#page-footer {
@@ -12,6 +18,7 @@ footer#page-footer {
   background: $secondary-color;
   text-align: center;
   padding: 5px;
+  border-top: 3px solid darken($secondary-color, 10%)
 }
 
 aside#sidebar {
